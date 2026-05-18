@@ -1,0 +1,110 @@
+:root {
+  /* =========================
+     BRAND CORE
+  ========================= */
+
+  --color-primary: #F05A00;        /* Naranja Drovert */
+  --color-primary-dark: #C94A00;
+  --color-primary-light: #FF7A1A;
+
+  --color-energy: #D9A800;         /* Energía (acento) */
+  --color-energy-dark: #B38F00;
+
+  /* =========================
+     NEUTRALS
+  ========================= */
+
+  --color-bg: #FFFFFF;
+  --color-bg-alt: #F5F6F7;
+
+  --color-surface: #FFFFFF;
+  --color-surface-dark: #1C1F24;
+
+  --color-border: #E0E3E6;
+  --color-border-strong: #C5C9CE;
+
+  /* =========================
+     TEXT
+  ========================= */
+
+  --color-text: #1C1F24;
+  --color-text-muted: #6B7280;
+  --color-text-inverse: #FFFFFF;
+
+  /* =========================
+     STATES
+  ========================= */
+
+  --color-success: #2E7D32;
+  --color-warning: #D9A800;
+  --color-error: #C62828;
+  --color-info: #2563EB;
+
+  /* =========================
+     UI ELEMENTS
+  ========================= */
+
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-bg-hover: var(--color-primary-dark);
+  --btn-primary-text: #FFFFFF;
+
+  --btn-secondary-bg: #1C1F24;
+  --btn-secondary-bg-hover: #000000;
+  --btn-secondary-text: #FFFFFF;
+
+  --btn-outline-border: var(--color-primary);
+  --btn-outline-text: var(--color-primary);
+  --btn-outline-hover-bg: var(--color-primary);
+  --btn-outline-hover-text: #FFFFFF;
+
+  /* =========================
+     LINKS
+  ========================= */
+
+  --link-color: var(--color-primary);
+  --link-hover: var(--color-primary-dark);
+
+  /* =========================
+     CARDS / COMPONENTS
+  ========================= */
+
+  --card-bg: #FFFFFF;
+  --card-border: var(--color-border);
+  --card-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  /* =========================
+     BADGES
+  ========================= */
+
+  --badge-industrial-bg: rgba(240, 90, 0, 0.1);
+  --badge-industrial-text: var(--color-primary);
+
+  --badge-energy-bg: rgba(217, 168, 0, 0.15);
+  --badge-energy-text: var(--color-energy-dark);
+
+  /* =========================
+     NAV / HEADER
+  ========================= */
+
+  --header-bg: #FFFFFF;
+  --header-text: #1C1F24;
+  --header-border: var(--color-border);
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  --footer-bg: #1C1F24;
+  --footer-text: #FFFFFF;
+  --footer-muted: #9CA3AF;
+
+  /* =========================
+     SPACING / RADIUS
+  ========================= */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --transition: 0.2s ease-in-out;
+}
