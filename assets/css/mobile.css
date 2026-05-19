@@ -86,17 +86,6 @@
     display: none;
   }
 
-  .site-header.menu-open .header-wrap > .btn {
-    display: block;
-    position: absolute;
-    top: calc(100% + 242px);
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 151;
-  }
-
   .hero {
     min-height: 520px;
   }
