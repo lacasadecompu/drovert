@@ -1,180 +1,455 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drovert Electrónica</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/variables.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/mobile.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drovert Electrónica | Soluciones Energéticas y Automatización Industrial</title>
+  <meta name="description" content="Soluciones energéticas y automatización industrial. Energía solar, automatización, electrónica profesional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-wrap">
-      <a class="brand" href="#inicio">
-        <img src="assets/img/de-logo.png" alt="Drovert Electrónica" />
-      </a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="main-nav">
-        <a class="nav-link active" href="#inicio">Inicio</a>
-        <a class="nav-link" href="#servicios">Servicios</a>
-        <a class="nav-link" href="#proyectos">Proyectos</a>
-        <a class="nav-link" href="#contacto">Contacto</a>
-      </nav>
-      <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
+
+  <!-- Header -->
+  <header class="header" id="inicio">
+    <div class="header__inner">
+      <div class="header__brand">
+        <a href="#inicio" class="logo">
+          <img src="img/logo.png" alt="Drovert Electrónica — Soluciones Energéticas y Automatización Industrial" class="logo__img">
+        </a>
+      </div>
+
+      <div class="header__right">
+        <div class="header__actions">
+          <a href="tel:+5491169837513" class="header__phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/></svg>
+            11 6983-7513
+          </a>
+          <a href="#contacto" class="btn btn--sm btn--header">SOLICITAR COTIZACIÓN</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#inicio" class="nav__link nav__link--active">INICIO</a></li>
+            <li><a href="#energia-solar" class="nav__link">ENERGÍA SOLAR</a></li>
+            <li><a href="#automatizacion" class="nav__link">AUTOMATIZACIÓN INDUSTRIAL</a></li>
+            <li><a href="#electronica" class="nav__link">ELECTRÓNICA PROFESIONAL</a></li>
+            <li><a href="#proyectos" class="nav__link">PROYECTOS</a></li>
+            <li><a href="#nosotros" class="nav__link">NOSOTROS</a></li>
+            <li><a href="#contacto" class="nav__link">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <section class="hero" id="inicio">
-    <div class="hero-slides">
-      <div class="hero-slide active" style="background-image: url('assets/img/hero/ChatGPT Image 15 may 2026, 11_04_30 p.m..png');"></div>
-      <div class="hero-slide" style="background-image: url('assets/img/hero/ChatGPT Image 15 may 2026, 20_42_29.png');"></div>
-      <div class="hero-slide" style="background-image: url('assets/img/hero/ChatGPT Image 15 may 2026, 20_44_21.png');"></div>
-      <div class="hero-slide" style="background-image: url('assets/img/hero/ChatGPT Image 16 may 2026, 01_41_37 a.m..png');"></div>
-      <div class="hero-slide" style="background-image: url('assets/img/hero/ChatGPT Image 16 may 2026, 12_51_48 p.m..png');"></div>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Energía y automatización para una industria más eficiente</h1>
-      <p>Integramos soluciones de energía solar y eólica con electrónica industrial y PLC para reducir costos, mejorar la continuidad operativa y potenciar la productividad.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#servicios">Conocé nuestros servicios</a>
-        <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          SOLUCIONES ENERGÉTICAS Y AUTOMATIZACIÓN <span class="text-orange">INDUSTRIAL</span>
+        </h1>
+        <p class="hero__desc">
+          Diseñamos e implementamos soluciones integrales en energía solar, automatización industrial y electrónica profesional para optimizar la eficiencia operativa de su empresa.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn">SOLICITAR COTIZACIÓN</a>
+          <a href="#proyectos" class="btn btn--outline">VER PROYECTOS →</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__devices">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=280&fit=crop" alt="Dashboard de monitoreo" class="hero__tablet">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=320&fit=crop" alt="Análisis de datos" class="hero__laptop">
+        </div>
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300&h=350&fit=crop" alt="Panel de control eléctrico" class="hero__panel">
       </div>
     </div>
-  </section>
 
-  <section class="services" id="servicios">
-    <div class="container">
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="service-icon">⚙</div>
-          <h3>Electrónica Industrial</h3>
-          <p>Diseñamos e implementamos tableros, protecciones y soluciones electrónicas para entornos industriales de alta exigencia.</p>
-          <span class="badge industrial">INDUSTRIAL</span>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">▦</div>
-          <h3>Automatización (PLC)</h3>
-          <p>Programamos e integramos PLC, HMI y comunicaciones industriales para controlar procesos críticos con precisión y trazabilidad.</p>
-          <span class="badge industrial">INDUSTRIAL</span>
-        </article>
-        <article class="service-card">
-          <div class="service-icon energy">☀</div>
-          <h3>Energía Solar y Eólica</h3>
-          <p>Desarrollamos proyectos renovables para industria, integrando generación, control y gestión energética para operación confiable.</p>
-          <span class="badge energy">ENERGÍA</span>
-        </article>
-      </div>
-
-      <div class="benefits-grid">
-        <article>
-          <h4>Ingeniería aplicada</h4>
-          <p>Diseñamos cada solución en función de tu proceso productivo, cumpliendo normativa y criterios de calidad.</p>
-        </article>
-        <article>
-          <h4>Implementación robusta</h4>
-          <p>Construimos instalaciones y tableros preparados para operar en condiciones industriales exigentes.</p>
-        </article>
-        <article>
-          <h4>Integración energética y control</h4>
-          <p>Combinamos generación renovable, automatización y electrónica para lograr sistemas eficientes y escalables.</p>
-        </article>
-        <article>
-          <h4>Soporte técnico continuo</h4>
-          <p>Acompañamos cada etapa con mantenimiento, mejoras y asistencia especializada para asegurar continuidad.</p>
-        </article>
+    <div class="hero__features">
+      <div class="container hero__features-inner">
+        <div class="hero__feature">
+          <div class="hero__feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <span>INGENIERÍA A MEDIDA</span>
+        </div>
+        <div class="hero__feature">
+          <div class="hero__feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <span>EQUIPOS CERTIFICADOS</span>
+        </div>
+        <div class="hero__feature">
+          <div class="hero__feature-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <span>SOPORTE TÉCNICO ESPECIALIZADO</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="projects" id="proyectos">
-    <div class="container">
-      <h2>Proyectos</h2>
-      <p class="section-subtitle">Proyectos industriales en energía, automatización y electrónica aplicada</p>
-      <div class="project-grid">
-        <img src="demo.png" alt="Proyecto 1" />
-        <img src="demo.png" alt="Proyecto 2" />
-        <img src="demo.png" alt="Proyecto 3" />
-        <img src="demo.png" alt="Proyecto 4" />
-      </div>
-      <div class="centered">
-        <a class="btn btn-outline" href="#">Ver más proyectos</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="container cta-wrap">
-      <div>
-        <h3>¿Tenés un proyecto industrial? Hablemos.</h3>
-        <p>Te ayudamos a integrar energía renovable, control y electrónica para que tu operación sea más eficiente y confiable.</p>
-      </div>
-      <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
-    </div>
-  </section>
-
-  <section class="contact" id="contacto">
-    <div class="container contact-grid">
-      <div>
-        <h2>Contacto</h2>
-        <p>Contanos tu desafío y armamos una propuesta técnica a medida para tu operación.</p>
-        <ul class="contact-list">
-          <li>Parque Industrial, Mza 7 Lote 12 (2700) Pergamino, Buenos Aires</li>
-          <li>+54 2477 123456</li>
-          <li>info@drovertelectronica.com.ar</li>
+  <!-- Energía Solar -->
+  <section class="service-section" id="energia-solar">
+    <div class="container service-section__inner">
+      <div class="service-section__content">
+        <div class="service-section__head">
+          <div class="service-section__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <h2 class="section-title section-title--left">ENERGÍA <span class="text-orange">SOLAR</span></h2>
+        </div>
+        <p class="service-section__desc">
+          Diseñamos e instalamos sistemas fotovoltaicos a medida para industria, comercio y aplicaciones móviles. Desde el dimensionamiento técnico hasta la puesta en marcha certificada.
+        </p>
+        <ul class="check-list">
+          <li>Sistemas On-Grid</li>
+          <li>Sistemas Híbridos</li>
+          <li>Baterías de Litio</li>
+          <li>Monitoreo Remoto</li>
+          <li>Dimensionamiento Técnico</li>
+          <li>Instalación Certificada</li>
         </ul>
       </div>
-      <form class="contact-form">
-        <div class="row">
-          <input type="text" placeholder="Nombre" />
-          <input type="email" placeholder="Email" />
+      <div class="service-section__visual">
+        <img src="img/projects/motorhome/motorhome-vista-aerea-paneles.jpg" alt="Instalación de paneles solares en motorhome">
+      </div>
+    </div>
+  </section>
+
+  <!-- Automatización Industrial -->
+  <section class="service-section service-section--dark service-section--reverse" id="automatizacion">
+    <div class="container service-section__inner">
+      <div class="service-section__content">
+        <div class="service-section__head">
+          <div class="service-section__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </div>
+          <h2 class="section-title section-title--left">AUTOMATIZACIÓN <span class="text-orange">INDUSTRIAL</span></h2>
         </div>
-        <textarea placeholder="Mensaje"></textarea>
-        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <p class="service-section__desc">
+          Integramos control, telemetría y monitoreo para optimizar procesos industriales. Tableros eléctricos, PLC, HMI y sistemas SCADA adaptados a cada operación.
+        </p>
+        <ul class="check-list">
+          <li>PLC &amp; HMI</li>
+          <li>Telemetría</li>
+          <li>Monitoreo Remoto</li>
+          <li>Tableros Eléctricos</li>
+          <li>Control de Procesos</li>
+          <li>Integración SCADA</li>
+        </ul>
+      </div>
+      <div class="service-section__visual">
+        <img src="img/automatizacion.jpg" alt="Ingeniero supervisando sistema de automatización industrial">
+      </div>
+    </div>
+  </section>
+
+  <!-- Electrónica Profesional -->
+  <section class="service-section" id="electronica">
+    <div class="container service-section__inner">
+      <div class="service-section__content">
+        <div class="service-section__head">
+          <div class="service-section__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h2 class="section-title section-title--left">ELECTRÓNICA <span class="text-orange">PROFESIONAL</span></h2>
+        </div>
+        <p class="service-section__desc">
+          Soluciones en protección eléctrica, respaldo de energía e instrumentación para entornos exigentes. Equipamiento certificado con soporte técnico especializado.
+        </p>
+        <ul class="check-list">
+          <li>UPS Online</li>
+          <li>Instrumentación</li>
+          <li>Reparación Electrónica</li>
+          <li>Estabilizadores</li>
+          <li>Protección Eléctrica</li>
+          <li>Mantenimiento Preventivo</li>
+        </ul>
+      </div>
+      <div class="service-section__visual">
+        <img src="img/projects/parking/parking-sistema-deye-baterias.jpg" alt="Sistema de respaldo energético con equipos Deye">
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="projects" id="proyectos">
+    <div class="container">
+      <h2 class="section-title">
+        PROYECTOS <span class="text-orange">REALIZADOS</span>
+      </h2>
+      <div class="projects__grid">
+        <article class="project-feature">
+          <div class="project-feature__media">
+            <img
+              src="img/projects/motorhome/motorhome-vista-aerea-paneles.jpg"
+              alt="Vista aérea de motorhome con paneles solares instalados en el techo"
+              class="project-feature__main"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="project-feature__body">
+            <h3 class="project-feature__title">INSTALACIÓN SOLAR EN <span class="text-orange">MOTORHOME</span></h3>
+            <p class="project-feature__desc">
+              Sistema fotovoltaico sobre vehículo recreativo para autonomía energética en ruta. Paneles en techo, inversor Growatt, banco de baterías e instalación eléctrica integrada al habitáculo.
+            </p>
+            <div class="project-feature__tags">
+              <span>Energía solar</span>
+              <span>Off-grid</span>
+              <span>Growatt</span>
+            </div>
+            <div class="project-feature__thumbs">
+              <button type="button" class="project-feature__thumb project-feature__thumb--active" data-src="img/projects/motorhome/motorhome-vista-aerea-paneles.jpg" data-alt="Vista aérea de motorhome con paneles solares instalados en el techo" aria-label="Ver vista aérea">
+                <img src="img/projects/motorhome/motorhome-vista-aerea-paneles.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-paneles-techo-instalados.jpg" data-alt="Paneles solares instalados sobre el techo del motorhome" aria-label="Ver paneles instalados">
+                <img src="img/projects/motorhome/motorhome-paneles-techo-instalados.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-paneles-solares-techo.jpg" data-alt="Paneles solares vistos desde arriba en el techo del motorhome" aria-label="Ver paneles solares en techo">
+                <img src="img/projects/motorhome/motorhome-paneles-solares-techo.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-panel-lateral-techo.jpg" data-alt="Panel solar ubicado sobre lateral del techo del motorhome" aria-label="Ver panel lateral">
+                <img src="img/projects/motorhome/motorhome-panel-lateral-techo.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-instalacion-paneles-techo.jpg" data-alt="Trabajo de instalación de paneles solares sobre el motorhome" aria-label="Ver instalación en techo">
+                <img src="img/projects/motorhome/motorhome-instalacion-paneles-techo.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-estructura-paneles-techo.jpg" data-alt="Estructura de soporte para paneles solares en el techo" aria-label="Ver estructura de paneles">
+                <img src="img/projects/motorhome/motorhome-estructura-paneles-techo.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-soportes-paneles-lateral.jpg" data-alt="Soportes laterales para montaje de paneles solares" aria-label="Ver soportes laterales">
+                <img src="img/projects/motorhome/motorhome-soportes-paneles-lateral.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-banco-baterias-compartimento.jpg" data-alt="Banco de baterías Ultracell instalado en compartimento del motorhome" aria-label="Ver banco de baterías">
+                <img src="img/projects/motorhome/motorhome-banco-baterias-compartimento.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-bateria-ultracell-detalle.jpg" data-alt="Detalle de batería Ultracell del sistema solar" aria-label="Ver detalle de batería">
+                <img src="img/projects/motorhome/motorhome-bateria-ultracell-detalle.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-sistema-electrico-completo.jpg" data-alt="Sistema eléctrico completo con inversor y protecciones" aria-label="Ver sistema eléctrico completo">
+                <img src="img/projects/motorhome/motorhome-sistema-electrico-completo.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-caja-protecciones.jpg" data-alt="Caja de protecciones eléctricas del motorhome" aria-label="Ver caja de protecciones">
+                <img src="img/projects/motorhome/motorhome-caja-protecciones.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-inversor-growatt-protecciones.jpg" data-alt="Inversor Growatt con protecciones instaladas" aria-label="Ver inversor Growatt">
+                <img src="img/projects/motorhome/motorhome-inversor-growatt-protecciones.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-inversor-compartimento.jpg" data-alt="Inversor instalado dentro de compartimento del motorhome" aria-label="Ver inversor en compartimento">
+                <img src="img/projects/motorhome/motorhome-inversor-compartimento.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-tablero-control.jpg" data-alt="Tablero de control y protecciones del sistema solar" aria-label="Ver tablero de control">
+                <img src="img/projects/motorhome/motorhome-tablero-control.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/motorhome/motorhome-motorhome-en-taller.jpg" data-alt="Motorhome en taller durante la instalación solar" aria-label="Ver motorhome en taller">
+                <img src="img/projects/motorhome/motorhome-motorhome-en-taller.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-feature">
+          <div class="project-feature__media">
+            <img
+              src="img/projects/parking/parking-sistema-deye-baterias.jpg"
+              alt="Sistema de energía solar Deye con inversor y baterías de litio"
+              class="project-feature__main"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="project-feature__body">
+            <h3 class="project-feature__title">SISTEMA SOLAR EN <span class="text-orange">ESTACIONAMIENTO</span></h3>
+            <p class="project-feature__desc">
+              Instalación en cubierta con inversor híbrido Deye y banco de baterías de litio. Solución completa para generación, almacenamiento y respaldo energético.
+            </p>
+            <div class="project-feature__tags">
+              <span>Energía solar</span>
+              <span>Híbrido</span>
+              <span>Deye</span>
+              <span>Litio</span>
+            </div>
+            <div class="project-feature__thumbs">
+              <button type="button" class="project-feature__thumb project-feature__thumb--active" data-src="img/projects/parking/parking-sistema-deye-baterias.jpg" data-alt="Sistema de energía solar Deye con inversor y baterías de litio" aria-label="Ver sistema completo">
+                <img src="img/projects/parking/parking-sistema-deye-baterias.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-inversor-deye-frontal.jpg" data-alt="Inversor híbrido Deye instalado en estructura del estacionamiento" aria-label="Ver inversor Deye frontal">
+                <img src="img/projects/parking/parking-inversor-deye-frontal.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-inversor-deye-montaje.jpg" data-alt="Inversor Deye durante el montaje del sistema" aria-label="Ver montaje del inversor">
+                <img src="img/projects/parking/parking-inversor-deye-montaje.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-inversor-deye-conexiones.jpg" data-alt="Detalle de conexiones del inversor Deye" aria-label="Ver conexiones del inversor">
+                <img src="img/projects/parking/parking-inversor-deye-conexiones.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-bateria-litio-conexiones.jpg" data-alt="Banco de baterías de litio Deye con conexiones instaladas" aria-label="Ver conexiones de batería">
+                <img src="img/projects/parking/parking-bateria-litio-conexiones.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-modulo-bateria-deye.jpg" data-alt="Módulo de batería de litio Deye SE-G5.1 Pro" aria-label="Ver módulo de batería">
+                <img src="img/projects/parking/parking-modulo-bateria-deye.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-paneles-cubierta-vista-lateral.jpg" data-alt="Paneles solares instalados sobre cubierta del estacionamiento" aria-label="Ver paneles en cubierta lateral">
+                <img src="img/projects/parking/parking-paneles-cubierta-vista-lateral.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+              <button type="button" class="project-feature__thumb" data-src="img/projects/parking/parking-paneles-cubierta-vista-general.jpg" data-alt="Vista general de paneles solares sobre cubierta del estacionamiento" aria-label="Ver paneles en cubierta general">
+                <img src="img/projects/parking/parking-paneles-cubierta-vista-general.jpg" alt="" loading="lazy" decoding="async">
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Why Choose Us -->
+  <section class="why" id="nosotros">
+    <div class="container">
+      <h2 class="section-title">
+        ¿POR QUÉ ELEGIR <span class="text-orange">DROVERT ELECTRÓNICA</span>?
+      </h2>
+      <div class="why__grid">
+        <div class="why__item">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </div>
+          <span>SOLUCIONES A MEDIDA</span>
+        </div>
+        <div class="why__item">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+          </div>
+          <span>INGENIERÍA Y DIMENSIONAMIENTO</span>
+        </div>
+        <div class="why__item">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <span>EQUIPOS CERTIFICADOS</span>
+        </div>
+        <div class="why__item">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <span>MONITOREO REMOTO</span>
+        </div>
+        <div class="why__item">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+          </div>
+          <span>SOPORTE TÉCNICO ESPECIALIZADO</span>
+        </div>
+        <div class="why__item">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <span>ATENCIÓN PERSONALIZADA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Smart Control -->
+  <section class="smart-control">
+    <div class="container smart-control__inner">
+      <div class="smart-control__content">
+        <h2 class="section-title section-title--left">
+          CONTROL INTELIGENTE <span class="text-orange">PARA TU EMPRESA</span>
+        </h2>
+        <p class="smart-control__desc">
+          Integramos tecnología de monitoreo y control para que su empresa opere con máxima eficiencia, reduciendo costos y aumentando la productividad.
+        </p>
+        <ul class="check-list check-list--cols">
+          <li>Reducción de costos energéticos</li>
+          <li>Aumento de productividad</li>
+          <li>Monitoreo 24/7 en tiempo real</li>
+          <li>Alertas automáticas</li>
+          <li>Reportes detallados</li>
+          <li>Integración con sistemas existentes</li>
+        </ul>
+      </div>
+      <div class="smart-control__visual">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&h=500&fit=crop" alt="Control inteligente industrial">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section class="contact" id="contacto">
+    <div class="contact__bg"></div>
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <h2 class="section-title section-title--left">
+          SOLICITE UNA EVALUACIÓN <span class="text-orange">SIN CARGO</span>
+        </h2>
+        <p class="contact__desc">
+          Nuestro equipo de ingenieros evaluará sus necesidades y le presentará una propuesta técnica personalizada sin compromiso.
+        </p>
+        <ul class="contact__details">
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.56.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.25 1.01l-2.2 2.22z"/></svg>
+            <a href="tel:+5491169837513">+54 9 11 6983-7513</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info@drovertelectronica.com">info@drovertelectronica.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2zm-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+            <a href="https://instagram.com/drovertelectronica" target="_blank" rel="noopener">@drovertelectronica</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            <span>Buenos Aires, Argentina</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="empresa" name="empresa" placeholder="Empresa">
+        </div>
+        <div class="form-group">
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="localidad" name="localidad" placeholder="Localidad">
+        </div>
+        <div class="form-group">
+          <textarea id="consulta" name="consulta" placeholder="Consulta" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--full">SOLICITAR ASESORAMIENTO</button>
       </form>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img class="footer-logo" src="assets/img/de-logo.png" alt="Drovert" />
-        <p>Soluciones integrales para industria: energía solar/eólica, automatización PLC y electrónica industrial.</p>
-      </div>
-      <div>
-        <h5>Enlaces</h5>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <div>
-        <h5>Servicios</h5>
-        <a href="#servicios">Electrónica Industrial</a>
-        <a href="#servicios">Automatización (PLC)</a>
-        <a href="#servicios">Energía</a>
-      </div>
-      <div>
-        <h5>Contacto</h5>
-        <p>Parque Industrial, Mza 7 Lote 12 (2700) Pergamino, Buenos Aires</p>
-        <p>+54 2477 123456</p>
-        <p>info@drovertelectronica.com.ar</p>
-      </div>
+  <!-- Footer bottom -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Drovert Electrónica. Todos los derechos reservados.</p>
     </div>
-    <div class="container copyright">© 2025 Drovert Electrónica. Todos los derechos reservados.</div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5491169837513" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
-
-
