@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function scrollToHashTarget(target, { updateHash = true, behavior = 'smooth' } = {}) {
     if (!target) return;
 
-    const top = target.getBoundingClientRect().top + window.scrollY - getScrollOffset();
+    // Si el target es el header mismo, ir directo al top
+    const top = target === header
+      ? 0
+      : target.getBoundingClientRect().top + window.scrollY - getScrollOffset();
 
     window.scrollTo({
       top: Math.max(0, top),
@@ -124,19 +127,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('resize', initScrollObserver);
 
-  document.querySelectorAll('.project-feature').forEach(project => {
-    const main = project.querySelector('.project-feature__main');
-    const thumbs = project.querySelectorAll('.project-feature__thumb');
-
-    if (!main || !thumbs.length) return;
-
-    thumbs.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        main.src = thumb.dataset.src;
-        main.alt = thumb.dataset.alt;
-        thumbs.forEach(t => t.classList.remove('project-feature__thumb--active'));
-        thumb.classList.add('project-feature__thumb--active');
-      });
+  // Inicializar Swiper en cada proyecto
+  document.querySelectorAll('.project-swiper').forEach(el => {
+    new Swiper(el, {
+      loop: true,
+      grabCursor: true,
+      keyboard: { enabled: true },
+      navigation: {
+        nextEl: el.querySelector('.swiper-button-next'),
+        prevEl: el.querySelector('.swiper-button-prev'),
+      },
+      pagination: {
+        el: el.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+      lazy: true,
     });
   });
 });
